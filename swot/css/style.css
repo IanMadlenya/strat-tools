@@ -1,0 +1,10 @@
+#canvas {
+    width: 800px;
+    height: 600px;
+}
+.quadrant_rect {
+	stroke: grey;
+	fill: none;
+	shape-rendering: geometricPrecision;
+	stroke-width: 2px
+}
