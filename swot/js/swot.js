@@ -117,4 +117,11 @@ $(function() {
         .attr("y2", height / 2)
         .attr("stroke-width", 2)
         .attr("stroke", "gray");
+
+    quadrants.append("text")
+        .attr("x", xScale(25))
+        .attr("y", yScale(25))
+        .attr("text-anchor", "middle")
+        .text("Opportunities")
+        .attr("class", "quad-label")
 });
