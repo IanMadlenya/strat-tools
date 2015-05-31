@@ -8,3 +8,8 @@
 	shape-rendering: geometricPrecision;
 	stroke-width: 2px
 }
+
+.quad_label {
+    font-weight: 14px;
+    fill: gray;
+}
