@@ -124,4 +124,26 @@ $(function() {
         .attr("text-anchor", "middle")
         .text("Opportunities")
         .attr("class", "quad-label")
+
+    quadrants.append("text")
+        .attr("x", xScale(75))
+        .attr("y", yScale(25))
+        .attr("text-anchor", "middle")
+        .text("Threats")
+        .attr("class", "quad-label")
+
+    quadrants.append("text")
+        .attr("x", xScale(25))
+        .attr("y", yScale(75))
+        .attr("text-anchor", "middle")
+        .text("Strengths")
+        .attr("class", "quad-label")
+
+    quadrants.append("text")
+        .attr("x", xScale(75))
+        .attr("y", yScale(75))
+        .attr("text-anchor", "middle")
+        .text("Weaknesses")
+        .attr("class", "quad-label")
+
 });
