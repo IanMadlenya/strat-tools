@@ -146,4 +146,12 @@ $(function() {
         .text("Weaknesses")
         .attr("class", "quad_label")
 
+    var data = [
+        {
+            "label": "Label the item",
+            "quadrant": "Strength", // The script should autoplace the label based on data
+            "description": "A description of the item when clicked",
+            "recommendation": "Recommended course of action for item",
+        },
+    ]
 });
