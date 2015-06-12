@@ -150,8 +150,24 @@ $(function() {
         {
             "label": "Label the item",
             "quadrant": "Strength", // The script should autoplace the label based on data
+            "xpos": 20, // but in the meantime we set explicit coordinates
+            "ypos": 50,
             "description": "A description of the item when clicked",
             "recommendation": "Recommended course of action for item",
         },
     ]
+    
+    quadrants.selectAll("circle")
+        .data(data)
+        .enter()
+        .append("circle")
+        .attr("cx", function(d) {
+            return xScale(d.xpos);
+        })
+        .attr("cy", function(d) {
+            return yScale(d.ypos);
+        })
+        .attr("r", 7)
+        .attr("opacity", 1)
+        .attr("class", "circle")
 });
