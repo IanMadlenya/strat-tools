@@ -17,3 +17,7 @@
 .circle {
         fill: steelblue;
 }
+
+.label {
+    font-size: 12px;
+}

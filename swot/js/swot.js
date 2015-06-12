@@ -170,4 +170,13 @@ $(function() {
         .attr("r", 7)
         .attr("opacity", 1)
         .attr("class", "circle")
+
+    quadrants.selectAll("label")
+        .data(data)
+        .enter()
+        .append("text")
+        .attr("x", function(d) { return xScale(d.xpos + 2) })
+        .attr("y", function(d) { return yScale(d.ypos - 0.5) })
+        .text(function(d) { return d.label })
+        .attr("class", "label")
 });
